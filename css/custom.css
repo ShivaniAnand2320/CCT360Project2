@@ -1,0 +1,57 @@
+:root{
+    --bg-primary: #230c33;  
+    --bg-secondary: #caa8f5;
+    --purpleTwo: #9984d4;
+    --orange: #FF6C22;
+    --bs-blue: #2B3499;
+    --gold: #f1b71c;
+    --heading-font: 'Abril Fatface', serif;
+    --sub-main-font: 'Lexend', sans-serif;
+}
+
+h1, h2{
+    font-family: var(--heading-font);
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    filter: drop-shadow(5px 10px 10px rgba(40, 33, 80, 0.59));
+}
+
+.bg-blur {
+    background-color: var(--bg-primary);
+    mix-blend-mode: normal;
+}
+
+.nav-link{
+    color: var(--bs-body-bg);
+    font-family: var(--sub-main-font);
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: var(--bg-primary);
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+.fixed-intro{
+    background-attachment: fixed;
+    width: 100%;
+    background: radial-gradient(var(--bg-secondary), var(--orange));
+}
+
+.fixed-intro h1{
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+#mypic{
+    width: 20%;
+    border-radius: 13% 70% / 36% 31% 59% 64%;
+}
