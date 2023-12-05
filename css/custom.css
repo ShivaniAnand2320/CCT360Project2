@@ -4,13 +4,17 @@
     --purpleTwo: #9984d4;
     --orange: #FF6C22;
     --bs-blue: #2B3499;
-    --gold: #f1b71c;
+    --gold: #c59615;
     --heading-font: 'Abril Fatface', serif;
     --sub-main-font: 'Lexend', sans-serif;
 }
 
 h1, h2{
     font-family: var(--heading-font);
+}
+
+body{
+    background-color: var(--purpleTwo);
 }
 
 .navbar{
@@ -20,9 +24,8 @@ h1, h2{
     filter: drop-shadow(5px 10px 10px rgba(40, 33, 80, 0.59));
 }
 
-.bg-blur {
+.bg-primary-purp {
     background-color: var(--bg-primary);
-    mix-blend-mode: normal;
 }
 
 .nav-link{
@@ -30,7 +33,7 @@ h1, h2{
     font-family: var(--sub-main-font);
 }
 
-.nav-tabs{
+/* .nav-tabs{
     border-bottom: none;
 }
 
@@ -38,12 +41,30 @@ h1, h2{
     background-color: var(--bg-primary);
     color: var(--gold);
     border-color: var(--gold);
+} */
+
+.nav-pills .nav-link.active{
+    background-color: var(--orange);
+    color: var(--bg-primary);
+    font-weight: 700;
+}
+
+@keyframes fixedintro-purp-or{ /*animation*/
+    from{background: radial-gradient(var(--bg-secondary), var(--orange));}
+    to{background: radial-gradient(var(--purpleTwo), var(--orange));}
 }
 
 .fixed-intro{
+    /* width: 100%; */
+    background: radial-gradient(var(--orange), var(--purpleTwo));
+    
     background-attachment: fixed;
-    width: 100%;
-    background: radial-gradient(var(--bg-secondary), var(--orange));
+    z-index: -2;
+}
+
+.fixed-intro:hover{/*animation*/
+    animation-name: fixedintro-purp-or;
+    animation-duration: 5s;
 }
 
 .fixed-intro h1{
