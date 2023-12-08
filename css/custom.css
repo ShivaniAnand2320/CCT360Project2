@@ -5,12 +5,18 @@
     --orange: #FF6C22;
     --bs-blue: #2B3499;
     --gold: #c59615;
+    --violet: #451e5d;
     --heading-font: 'Abril Fatface', serif;
     --sub-main-font: 'Lexend', sans-serif;
+    
 }
 
 h1, h2{
     font-family: var(--heading-font);
+}
+
+h3, h4, h5, h6{
+    font-family: var(--sub-main-font);
 }
 
 body{
@@ -24,8 +30,9 @@ body{
     filter: drop-shadow(5px 10px 10px rgba(40, 33, 80, 0.59));
 }
 
-.bg-primary-purp {
-    background-color: var(--bg-primary);
+.bg-blur {
+    /* background-color: var(--bg-primary); */
+    backdrop-filter: blur(1.5rem) saturate(1.5); /*saturate helps the background disappear when the blur doesnt help it stand out*/
 }
 
 .nav-link{
@@ -75,4 +82,29 @@ body{
 #mypic{
     width: 20%;
     border-radius: 13% 70% / 36% 31% 59% 64%;
+}
+
+.intro-cards h2{
+    color: var(--violet);
+    font-size: 2.5rem;
+}
+
+.intro-cards h3{
+    color: var(--bg-secondary);
+    font-weight: 600;
+}
+
+.intro-cards p{
+    color: var(--bs-body-bg);
+}
+
+.intro-cards-body{
+    background-color: var(--violet);
+    border: none;
+    transition: 2s;
+}
+
+footer h4{
+    font-family: var(--heading-font);
+    font-size: 3rem;
 }
