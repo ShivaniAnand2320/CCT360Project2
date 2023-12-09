@@ -40,16 +40,6 @@ body{
     font-family: var(--sub-main-font);
 }
 
-/* .nav-tabs{
-    border-bottom: none;
-}
-
-.nav-tabs .nav-link.active{
-    background-color: var(--bg-primary);
-    color: var(--gold);
-    border-color: var(--gold);
-} */
-
 .nav-pills .nav-link.active{
     background-color: var(--orange);
     color: var(--bg-primary);
@@ -61,10 +51,13 @@ body{
     to{background: radial-gradient(var(--purpleTwo), var(--orange));}
 }
 
+/* .title-sub-pages{
+    font-size: 3rem;
+} */
+
 .fixed-intro{
     /* width: 100%; */
     background: radial-gradient(var(--orange), var(--purpleTwo));
-    
     background-attachment: fixed;
     z-index: -2;
 }
@@ -104,7 +97,51 @@ body{
     transition: 2s;
 }
 
+.exhibit-h2 h2{
+    font-size: 3.5rem;
+    color: var(--bg-primary);
+}
+
+/* #custom-lands-slideshow{
+    background-color: var(--bg-secondary);
+} */
+
+.carousel-caption{
+    background-color: var(--bs-black);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 4rem;
+    height: 4rem;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+    background-color: var(--bs-black);
+}
+
 footer h4{
     font-family: var(--heading-font);
     font-size: 3rem;
+    color: var(--bs-body-bg);
+}
+
+.fa{
+    /* font-size: 108px; */
+	text-decoration: none;
+	color: var(--bs-black);
+}
+
+.btn-ig, .btn-ld{
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 2.5rem;
+    background-color: var(--bs-body-bg);
+    border: none;
+}
+
+.btn-ig:hover{
+    background: linear-gradient(to bottom left,#485ec1, #a230b9, #d83e7e, #ee4c4a, #f67d44,#f6ca51);
+}
+
+.btn-ld:hover{
+    background-color: #1469c7;
 }

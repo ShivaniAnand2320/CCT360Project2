@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shivani Anand</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100;200;300;400;600&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-blur">
+        <div class="container-fluid">
+            <a class="navbar-brand px-4" href="home.html">Shivani Anand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav nav-pills me-5 ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="exhibit.html">Exhibit</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="summer.html">My Summer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="filmblog.html">Film Buff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="process.html">Process</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    
+    <!-- Footer -->
+    <footer class="mt-5 mb-2">
+        <div class="container mt-5 hstack gap-3">
+
+            <div class="p-2">
+                <h4 id="curr-date">Today: </h4>
+                <h6>&copy; 2023 | All Rights Respected &amp; I am Beyonc&eacute; Always</h6>
+            </div>
+            
+            <!-- socials -->
+            <div class="p-2 ms-auto">
+                <div class="">
+                    <div class="col">
+                        <div class="col-md-6 col-sm-12 text-center">
+                            <button type="button" class="btn btn-ig btn-lg">
+                                <a href="https://www.instagram.com/partyronwinsart/" class="fa fa-instagram fa-3x" target="_blank"></a>
+                            </button>
+                        </div>
+                        <div class="col-md-6 col-sm-12 text-center mt-3">
+                            <button type="button" class="btn btn-ld btn-lg">
+                                <a href="https://www.linkedin.com/in/shivani-anand-4b58781a3" class="fa fa-linkedin fa-3x" target="_blank"></a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <!-- js-script -->
+    <script>
+        // Time Date
+        var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+        var months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Augt", "Sept", "Oct", "Nov", "Dec" ];
+        const d = new Date();
+        const day = days[d.getDay()];
+        const month = months[d.getMonth()];
+        const date = d.getDate();
+        const year = d.getFullYear();
+        var timeHrs = d.getHours();
+        var timeMins = d.getMinutes();
+
+        if(timeHrs < 10){
+            timeHrs = "0" + timeHrs;
+        }
+        if(timeMins < 10){
+            timeMins = "0" + timeMins;
+        }
+
+        var time = timeHrs + ":" + timeMins;
+        if(0 >= timeHrs || timeHrs < 12){
+            time = time + "AM";
+        }
+        else if(12 >= timeHrs || timeHrs < 24){
+            time = time + "PM";
+        }
+        document.getElementById("curr-date").innerHTML = day + ", " + " " + date + " " + month + " " + year + "<br>" +
+                                                            time + "<br><br>";
+    </script>
+
+</body>
+</html>

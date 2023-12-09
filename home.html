@@ -33,7 +33,7 @@
                   <a class="nav-link" href="exhibit.html">Exhibit</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="wander.html">Wandering Videos</a>
+                  <a class="nav-link" href="summer.html">My Summer</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="filmblog.html">Film Buff</a>
@@ -56,13 +56,9 @@
     <div class="fixed-intro">
         <div class="container-fluid text-center text-white py-4 px-4">
             <h1>Hello Hello !</h1>
-            <!-- <span class="material-symbols-outlined ">
-                emoji_nature
-            </span> -->
             <h1>I'm Shivani Anand :&#41;</h1>
             <img src="images/shivanianand.jpg" alt="picture of the website's creator, Shivani Anand" id="mypic">
            </div>
-           
     </div>
 
     <!-- Intro words+gifs with cards -->
@@ -133,16 +129,23 @@
     </div>
 
     <!-- spotlight -->
-    <!-- <div class="mt-5">
-        <video class="w-100" autoplay muted loop>
-            <source src="videos/yellowQC.mp4" type="video/mp4" alt="connotative video of QC">
-            Your browser does not support HTML5 video.
-        </video>
-    </div> -->
+    <div class="container mt-5">
+        <div class="row" >
+            <div class="col-md-4 col-sm-12 mt-2">
+                <img src="images/home_spot_me.jpg" class="img-fluid rounded-5" alt="image of the creator, Shivani looking ahead">
+            </div>
+            <div class="col-md-8 col-sm-12 mt-2">
+                <video class="w-100 rounded-5" autoplay muted loop>
+                    <source src="videos/water_spot.mp4"  type="video/mp4" alt="spotlight video of water">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="mt-5">
-        <div class="container mt-4 hstack gap-3">
+    <footer class="mt-5 mb-2">
+        <div class="container mt-5 hstack gap-3">
 
             <div class="p-2">
                 <h4 id="curr-date">Today: </h4>
@@ -153,11 +156,16 @@
             <div class="p-2 ms-auto">
                 <div class="">
                     <div class="col">
-                        <div class="col-md-6 col-sm-12 bg-black">
-                            <a href="#" class="fa fa-instagram" target="_blank"> Instagram</a>
+                        <div class="col-md-6 col-sm-12 text-center">
+                            <button type="button" class="btn btn-ig btn-lg">
+                                <a href="https://www.instagram.com/partyronwinsart/" class="fa fa-instagram fa-3x" target="_blank"></a>
+                            </button>
                         </div>
-                        <div class="col-md-6 col-sm-12 mt-3 bg-black">
-                            <a href="#" class="fa fa-linkedin" target="_blank"> LinkedIn</a>
+                        <div class="col-md-6 col-sm-12 text-center mt-3">
+                            <button type="button" class="btn btn-ld btn-lg">
+                                <a href="https://www.linkedin.com/in/shivani-anand-4b58781a3" class="fa fa-linkedin fa-3x" target="_blank"></a>
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -169,6 +177,7 @@
 
     <!-- js-script -->
     <script>
+        // Time Date
         var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
         var months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Augt", "Sept", "Oct", "Nov", "Dec" ];
         const d = new Date();
@@ -194,7 +203,7 @@
             time = time + "PM";
         }
         document.getElementById("curr-date").innerHTML = day + ", " + " " + date + " " + month + " " + year + "<br>" +
-                                                            time;
+                                                            time + "<br><br>";
     </script>
 
 </body>
