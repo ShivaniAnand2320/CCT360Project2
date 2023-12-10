@@ -19,8 +19,21 @@ h3, h4, h5, h6{
     font-family: var(--sub-main-font);
 }
 
+p {
+    font-family: 'Yeseva One', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
 body{
     background-color: var(--purpleTwo);
+}
+
+.text-orientation-vert{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 .navbar{
@@ -28,11 +41,21 @@ body{
     top: 0;
     z-index: 999;
     filter: drop-shadow(5px 10px 10px rgba(40, 33, 80, 0.59));
+    font-size: 1.5rem;
 }
 
 .bg-blur {
     /* background-color: var(--bg-primary); */
     backdrop-filter: blur(1.5rem) saturate(1.5); /*saturate helps the background disappear when the blur doesnt help it stand out*/
+}
+
+.bg-translucent{
+    background: rgba(92, 72, 124, 0.39);
+}
+
+.bg-light-orange{
+    background-color: var(--orange);
+    color: var(--bg-primary);
 }
 
 .nav-link{
@@ -51,9 +74,7 @@ body{
     to{background: radial-gradient(var(--purpleTwo), var(--orange));}
 }
 
-/* .title-sub-pages{
-    font-size: 3rem;
-} */
+/* Home */
 
 .fixed-intro{
     /* width: 100%; */
@@ -97,14 +118,19 @@ body{
     transition: 2s;
 }
 
+/* Exhibit */
+
+.test-gif:hover{
+    background-image: url("../images/watching-movie_gif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .exhibit-h2 h2{
     font-size: 3.5rem;
     color: var(--bg-primary);
 }
-
-/* #custom-lands-slideshow{
-    background-color: var(--bg-secondary);
-} */
 
 .carousel-caption{
     background-color: var(--bs-black);
@@ -118,6 +144,98 @@ body{
 .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
     background-color: var(--bs-black);
 }
+
+/* table - Resume */
+
+.table{
+    --bs-table-bg: var(--orange);
+}
+
+[data-bs-theme=dark] .table, [data-bs-theme=dark] .bg-light-orange{
+    --bs-table-bg: var(--bs-blue);
+    background-color: var(--bs-blue);
+}
+
+.form-switch .form-check-input {
+    width: 4em;
+    height: 2.5em;
+}
+
+table h2{
+    font-size: 3rem;
+}
+
+table h4{
+    font-size: 2em;
+    color:var(--bs-body-bg);
+}
+
+[data-bs-theme=dark] table h4{
+    color: var(--bs-white);
+}
+
+table h6{
+    font-size: 1.2em;
+}
+
+.btn-primary{
+    background-color: var(--bs-black);
+    border: 0;
+    font-weight: 700;
+}
+
+.btn-primary:hover{
+    color: var(--bs-black);
+    background-color: var(--bs-body-bg);
+}
+
+[data-bs-theme=dark] .btn-primary{
+    background-color: var(--gold);
+    border: 0;
+    color: var(--bg-primary);
+    font-weight: 700;
+}
+
+
+[data-bs-theme=dark] .btn-primary:hover{
+    color: var(--gold);
+    background-color: var(--bg-primary);
+}
+
+/* Contact */
+
+#conno-contact{
+    background-image: url("../images/conno_contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 47%;
+    height: auto;
+}
+
+.contact h2{
+    font-size: 4.8rem;
+    color: var(--bs-body-bg);
+}
+
+/* Filmblog */
+.badge{
+    --bs-badge-padding-x: 1em;
+    --bs-badge-padding-y: 0.5em;
+    --bs-badge-font-size: 1em;
+}
+
+.cust-card-overlay{
+    opacity: 0;
+}
+
+.film-card:hover .card-img-overlay{
+    opacity: 1;
+    background: rgba(40, 18, 188, 0.59);
+    color: var(--bs-white);
+    font-size: 1.5rem;
+}
+
+/* Footer */
 
 footer h4{
     font-family: var(--heading-font);

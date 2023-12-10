@@ -20,7 +20,9 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-blur">
         <div class="container-fluid">
-            <a class="navbar-brand px-4" href="home.html">Shivani Anand</a>
+            <a class="navbar-brand px-4" href="home.html">
+                <img src="images/WebsiteLogo.svg" alt="Logo" style="width:70px;" class="rounded-pill">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +35,7 @@
                   <a class="nav-link" href="exhibit.html">Exhibit</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="summer.html">My Summer</a>
+                  <a class="nav-link" href="summer.html">Summer</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="filmblog.html">Film Buff</a>
@@ -54,64 +56,122 @@
 
     <!-- Cards for movies -->
     <!-- Intro words+gifs with cards -->
-    <div class="container-fluid intro-cards mt-4">
-        <h2>Who Am I</h2>
-
+    <div class="container-fluid text-white mt-4 p-5 bg-black">
+        <h1>My Favourite Movies</h1>
+        <h4>These are my top 9 all time favourite movies across 3 languages: English, Tamil and Malayalam.</h4>
+        <!-- Row 1 -->
         <div class="row">
-            <div class="col-md-3 col-sm-3 mt-2">
-                <div class="card ">
-                    <img class="card-img-top" src="images/premam.jpg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">I am a third-year student at the University of Toronto, Mississauga (UTM), majoring in Computer Science and CCIT. I am also the co-president of a CS-oriented academic club called the UTMSAM. Besides spending time with my friends, I like to learn about software design, UX/UI design, and media production.</p>
+
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
+                    <div class="card-header">
+                        <a href="#"><span class="badge rounded-pill bg-primary">#1</span></a>
+                    </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/premam.jpg" alt="Card image - Premam Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">Premam is a coming-of-age drama about a man from his teens to his thirties. Premam is the first movie I watched alone. It truly is a life-altering piece of art in my life since 2015.</p>
                     </div>
                 </div> 
             </div>
 
-            <div class="col-md-6 col-sm-12 mt-2">
-                <div class="card ">
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
                     <div class="card-header">
-                        <h3 class="card-title">Intern</h3>
+                        <a href="#"><span class="badge rounded-pill bg-primary">#2</span></a>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">Being interested in tech, I have cumulatively done 12 months of internship in two different companies. I started as a technical analyst at Bell Canada, then a junior developer at CGI and this summer as a software developer at Bell Canada. All my internships have helped me in exploring my interests.</p>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/inception.jpg" alt="Card image - Inception Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">Inception is a science fiction action film. It is my favourite Chris Nolan film since it has science, drama, thriller and romance. I pride that I understood the movie in one watch.</p>
+                    </div> 
+                </div> 
+            </div>
+
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
+                    <div class="card-header">
+                        <a href="#"><span class="badge rounded-pill bg-primary">#3</span></a>
                     </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/inglorious_basterds.jpg" alt="Card image - Inglourious Basterds Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">Inglourious Basterds is a historical fiction war film. I love QT's aesthetic and his action. This film encapsulates all his quirks while giving a satisfying, scary, funny and thrilling experience.</p>
+                    </div> 
+                </div> 
+            </div>
+
+        </div>
+        <!-- Row 2 -->
+        <div class="row">  
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
+                    <div class="card-header">
+                        <a href="#"><span class="badge rounded-pill bg-success">#4</span></a>
+                    </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/lala_land.jpg" alt="Card image - La La Land Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">La La Land is a romatic musical film. I am a sucker for romance and, this is the peak. Besides romance, it has comedy and drama and gives a sense of self to the characters.  </p>
+                    </div> 
+                </div> 
+            </div>
+
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
+                    <div class="card-header">
+                        <a href="#"><span class="badge rounded-pill bg-success">#5</span></a>
+                    </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/super_delux.jpg" alt="Card image - Super Deluxe Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">Super Deluxe is a hyperlink film that focuses on 4 different events affecting each other. This movie makes me think of the purpose of life while still enjoying the little things.</p>
+                    </div> 
+                </div> 
+            </div>
+
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
+                    <div class="card-header">
+                        <a href="#"><span class="badge rounded-pill bg-success">#6</span></a>
+                    </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/nice_guys.jpg" alt="Card image - Nice Guys Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">The Nice Guys is a buddy action dark comedy that revolves around two PIs in the 70's in LA. It is such a fun watch with an exhilarating plot.</p>
+                    </div> 
                 </div> 
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-6 col-sm-12 mt-2">
-                <div class="card ">
+        <!-- Row 3 -->
+        <div class="row">  
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
                     <div class="card-header">
-                        <h3 class="card-title">Visual Artist</h3>
+                        <a href="#"><span class="badge rounded-pill bg-secondary">#7</span></a>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">Ever since I knew what a crayon was, I have always been interested in visual arts. I experiment with pastels, watercolours, acrylics and pencil shading techniques. Although my strong suit is painting, I have also started experimenting with digital art using apps like sketchbook on my Ipad.</p>
-                    </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/devil_wears.jpg" alt="Card image - The Devil Wears Prada Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">The Devil's Wear Prada is a comedy-drama film that revolves around a new graduate trying to find herself and passion while working for a not-so-nice boss. It is a must-watch for everyone.</p>
+                    </div> 
                 </div> 
             </div>
 
-            <div class="col-md-6 col-sm-12 mt-2">
-                <div class="card ">
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
                     <div class="card-header">
-                        <h3 class="card-title">Cyclist</h3>
+                        <a href="#"><span class="badge rounded-pill bg-secondary">#8</span></a>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">I always prefer to bike everywhere I can and find as many new &amp; peaceful places as I can. Most of my childhood memories are filled with biking on busy roads and places way farther than my house without my parents' knowledge. This summer I completed 500km in a month for a charity.</p>
-                    </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/zodiac.jpg" alt="Card image - Zodiac Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">Zodiac is a mystery-thriller film based on the real-life investigation of the Zodiac killer. David Fincher is one of my favourites and this is one of his best (I love thrillers).</p>
+                    </div> 
                 </div> 
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-6 col-sm-12 mt-2 offset-md-3">
-                <div class="card ">
+            <div class="col-md-4  col-12 mt-md-3 mt-2">
+                <div class="card h-100 film-card">
                     <div class="card-header">
-                        <h3 class="card-title">Filmbuff</h3>
+                        <a href="#"><span class="badge rounded-pill bg-secondary">#9</span></a>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">I watched my first movie when I was 2. So, movies and I are inseparable. I prefer watching movies over reading and that's how I try to learn about new cultures, languages and concepts. I primarily watch movies in four languages. My favourite genres are coming-of-age dramas and psychological thrillers.</p>
-                    </div>
+                    <img class="card-img-top img-fluid object-fit-cover" src="images/kaithi.jpg" alt="Card image - Maanagaram Movie Poster">
+                    <div class="card-img-overlay cust-card-overlay py-md-5">
+                        <p class="card-text">Maanagaram is a hyperlink action-thriller film that happens in one night involving multiple characters, all meeting at the same point. It is a fun yet thrilling watch.</p>
+                    </div> 
                 </div> 
             </div>
         </div>
@@ -120,7 +180,7 @@
     
     <!-- Footer -->
     <footer class="mt-5 mb-2">
-        <div class="container mt-5 hstack gap-3">
+        <div class="container-fluid mt-5 mx-lg-auto hstack gap-3">
 
             <div class="p-2">
                 <h4 id="curr-date">Today: </h4>

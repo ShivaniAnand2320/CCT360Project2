@@ -20,7 +20,9 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-blur">
         <div class="container-fluid">
-            <a class="navbar-brand px-4" href="home.html">Shivani Anand</a>
+            <a class="navbar-brand px-4" href="home.html">
+                <img src="images/WebsiteLogo.svg" alt="Logo" style="width:70px;" class="rounded-pill">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +35,7 @@
                   <a class="nav-link" href="exhibit.html">Exhibit</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="summer.html">My Summer</a>
+                  <a class="nav-link" href="summer.html">Summer</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="filmblog.html">Film Buff</a>
@@ -52,10 +54,100 @@
           </div>
     </nav>
 
+    <!-- Resume table -->
+    <div class="container-md container-fluid py-4 px-3 bg-light-orange">
+        
+        <div class="form-check form-switch mb-5">
+            <input
+              class="form-check-input float-end p-2"
+              type="checkbox"
+              role="switch"
+              id="SwitchCheckChecked"
+              checked
+            />
+        </div>
+        
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th><h2>Academic & Professional Experiences</h2></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><h4>Education</h4></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td><h6> University of Toronto, Mississauga, ON | Sept. 2020 - Present</h6></td></tr>
+                <tr>
+                    <td><h6> Honours Bachelor in Computer Science and Communication, Culture, Information & Technology</h6></td>
+                </tr>
+                <tr><td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Software Design</td></tr>
+                <tr><td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Data Structure and Algorithms</td></tr>
+                <tr><td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Web Culture and Design</td></tr>
+                <tr><td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Design Thinking</td></tr>
+
+                <tr><td></td></tr>
+                <tr>
+                    <td><h6> Father Michael Goetz Secondary School, Mississauga, ON | Dec. 2016 - Jun. 2020</h6></td></tr>
+                <tr>
+                <tr><td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Graduated with Goetz Club</td></tr>
+
+                <tr><td></td></tr>
+                <tr>
+                    <td><h4>Work</h4></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td><h6>Technical Analyst - Bell Canada, Mississauga, ON | May 2022 - Aug. 2022</h6></td></tr>
+                <tr>
+                <tr>
+                   <td><h6>Junior Developer - CGI, Mississauga, ON | Sept. 2022 - Dec. 2022</h6></td></tr>
+                <tr>
+                <tr>
+                    <td><h6>Software Developer - Bell Canada, Mississauga, ON | May 2023 - Aug. 2023</h6></td></tr>
+                <tr>
+                
+
+                <tr><td></td></tr>
+                <tr>
+                    <td><h4>Technical Skills</h4></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Python</td>
+                </tr>
+                <tr>
+                    <td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Java</td>
+                </tr>
+                <tr>
+                    <td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Adobe Illustrator</td>
+                </tr>
+                <tr>
+                    <td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> C#</td>
+                </tr>
+                <tr>
+                    <td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Adobe InDesign</td>
+                </tr>
+                <tr>
+                    <td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> HTML & CSS</td>
+                </tr>
+                <tr>
+                    <td> <i class="fa fa-thumb-tack" style="color:#fff;"></i> Adobe XD</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <h3><a href="documents/Resume_Shivani_Anand.pdf" download="ShivaniAnand_Resume" target="_blank" class="d-grid gap-3">
+            <button type="button" class="btn btn-primary btn-block my-3">Download My Resume</button>
+        </a></h3>
+    </div>
     
     <!-- Footer -->
-    <footer class="mt-5 mb-2">
-        <div class="container mt-5 hstack gap-3">
+    <footer class="mt-5 mb-2" id="footer">
+        <div class="container-fluid mt-5 mx-lg-auto hstack gap-3">
 
             <div class="p-2">
                 <h4 id="curr-date">Today: </h4>
@@ -81,11 +173,23 @@
                 </div>
             </div>
         </div>
-        
     </footer>
 
 
     <!-- js-script -->
+
+    <script>
+        // Dark mode
+        document.getElementById('SwitchCheckChecked').addEventListener('click',()=>{
+            if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+                document.documentElement.setAttribute('data-bs-theme','light')
+            }
+            else {
+                document.documentElement.setAttribute('data-bs-theme','dark')
+            }
+        })
+    </script>
+
     <script>
         // Time Date
         var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
