@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="icon" href="images/WebsiteLogo.svg" type="image/icon type"> <!--adds logo title-->
     <title>Shivani Anand</title>
     
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -54,46 +55,195 @@
           </div>
     </nav>
 
+    <!-- Intro Title -->
+    <div class="container-fluid text-white mt-md-4 mt-2 exhibit-h2 px-5">
+        <h2>My Process</h2>
+        <div class="row text-wrap p-3">  
+            <h5 class="mt-2">
+                For Project 2 of CCT 360, I chose to build a portfolio website. I used my portfolio website from Project 2 of CCT260 as my inspiration. As per the guidelines, 
+                I used Bootstrap 5 elements everywhere. Using Bootstrap has really opened my eyes in terms of design and time. In my custom.css file, I have about 300 lines of code built on top of the Bootstrap 5 classes for personalization. 
+            </h5>
+
+            <h5 class="mt-2">
+                My colour palette includes multiple shades of purple with contrasting orange, gold and monochrome. I wanted cool colours, but at the same time, I needed certain parts of the website to pop. For example, I used a contrasting bright 
+                orange to represent the active tab in the nav bar. I wanted uniformity, so I used the same background for the body throughout the side. I didn't want the navbar to interfere with the theme, so I made it have a blurred background with 
+                some saturation to prevent competition.
+            </h5>
+
+            <h5 class="mt-2">
+                I used both serif and sans serif fonts sourced from Google fonts. All my main titles/headings (h1-h2) are serif font, Abril Fatface. My subheadings (h3-h6) and paragraphs have sans-serif fonts, Lexend and Yeseva One respectively. 
+                All the icons were sourced from W3Schools. 
+            </h5>
+
+            <h5 class="mt-2">
+                Other than the movie posters on the Film Buff page, sourced from Google Images, all the other media are my production.
+            </h5>
+        </div>
+    </div>
+
+    <!-- ScrollSpy as secondary navbar for the description below -->
+    <nav id="secondary-navbar" class="navbar navbar-expand-md bg-dark navbar-dark mt-2 px-2" data-bs-spy="scroll" data-bs-target="#secondary-Nav" data-bs-offset="0">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#"><h2>Page description</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondary-Nav" aria-controls="secondary-Nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="secondary-Nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home-spy"><h6>Home Desc</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exhibit-spy"><h6>Exhibit Desc</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#summer-spy"><h6>Summer Desc</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filmbuff-spy"><h6>Film BuffDesc</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume-spy"><h6>Resume Desc</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-spy"><h6>Contact Desc</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process-spy"><h6>Process Desc</h6></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Container for each page -->
-    <div class="container-fluid">
-        <div class="row px-5 py-3">
-            <div class="container">
-                <h1>Home</h1>
+    <div class="container-fluid bg-translucent">
+        <div class="row px-5 py-3 mt-4">
+
+            <div class="container px-3 mt-2">
+                <h2>WCAG2.0 Accessability</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        I believe that I have followed all the WCAG 2.0 accessibility guidelines. I did not rely on colour and text alone, even if I made the colours contrasting and all the text big. I checked the contrast of the colours using WebAIM. 
+                        All my video and photo fields have appropriate and descriptive alt fields. All the fields of my form have labels. The site is designed to fit any sized screen and is spaced appropriately making it readable. I added to the nav bar 
+                        and other components, making the navigation easy. The header and footer navigation have structural and utility navigations respectively. Overall, the site has predictable navigation, the content is straightforward to read and built using standard practices.
+                    </h5>
+                </div>
             </div>
 
-            <div class="container">
-                <h1>Exhibit</h1>
+            <div class="container px-3 mt-2" id="home-spy">
+                <h2>Home</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        I wanted my home page to be representative of the whole website so I tried to include as many design decisions I used in other pages as I could in the home page. To begin with the nav bar, I used the Bootstrap 5 nav bar but changed the colours, size and background.
+                    </h5>
+
+                    <h5 class="mt-2">
+                        Next is the spotlight section. I included a picture of me in a petal-shaped container. The background has an animation on hover where the background gradient colour changes for 5 seconds. 
+                    </h5>
+
+                    <h5 class="mt-2">
+                        Next is the Who am I section. I used five cards to represent myself and my interests. These cards on load appear after a 2s transition. I used Bootstrap 5 card classes and. I added to it the custom.css page. I made the last card to be in the middle of the container. 
+                        Since the last card stands out, I made its background change to a GIF on hover.
+                    </h5>
+
+                    <h5 class="mt-2">
+                        Next is the connotative spotlight section. This section has one image and one video. They have different sizes for stylistic purposes.
+                    </h5>
+
+                    <h5 class="mt-2">
+                        The next section is the footer, and it is universal throughout the site. I added a monochrome social media section but on hover, the background changes to their official colour schemes. My favourite feature in the footer is the live date and time display on refresh. 
+                        I used js to achieve this with the help of w3schools.
+                    </h5>
+                </div>
             </div>
 
-            <div class="container">
-                <h1>Summer</h1>
+            <div class="container px-3 mt-2" id="exhibit-spy">
+                <h2>Exhibit</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        My exhibit page is the photo-rich page. This page consists of 3 sections: Intro, Vertical images and Horizontal images. I wanted my media to be in the middle of the page, so I used container class for my sections. The bootstrap grid and other classes were a great help 
+                        concerning my design decisions. I didn't want my intro section to be the focus so I made it just plain white text without any intervention.
+                    </h5>
+
+                    <h5 class="mt-2">
+                        First, for the vertical images section, I used w3school's image gallery as the starting point. I then played around with the size of each image container to make it look like a flower with 8 images. The middle part has the word "vertical" written vertically using text 
+                        orientation and writing mode. 
+                    </h5>
+
+                    <h5 class="mt-2">
+                        Next for the horizontal images section, I did not want to do an image gallery. I instead used a carousel slide show using Bootstrap and js classes that came with the Bootstrap 5 package. By design, the carousel had 100% width which made the images look gigantic, so I 
+                        changed the features so that the carousel had some padding. I also added a background for the captions and arrows on hover for better readability and usability.
+                    </h5>
+                </div>
             </div>
 
-            <div class="container">
-                <h1>Film Buff</h1>
+            <div class="container px-3 mt-2" id="summer-spy">
+                <h2>Summer</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        My summer page is video-rich. I wanted it to stand out from my Exhibit page. I made my intro stand out not only to make it different but also to emphasize the introduction. Next, for my video section, I used the container fluid so that my videos are spread out throughout 
+                        the page. I used different column sizes and different widths and heights for each video to give the effect of a wall of videos representative of my summer.
+                    </h5>
+                </div>
             </div>
 
-            <div class="container">
-                <h1>Contact</h1>
+            <div class="container px-3 mt-2" id="filmbuff-spy">
+                <h2>Film Buff</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        My Film Buff page is shopping-based. Instead of a blog, I made it representative of my top 9 favourite films. I made a container-fluid consisting of 9 cards, 3 in each row unless it is a small screen, then it is one card in each row. My understanding of a blog page was a bunch 
+                        of text in responsive cards. I found plain text boring. I chose to have cards with a header and a body with the poster of the films I liked. I made the background of the container black to make my cards pop. The header of the cards has badges with different colours for each 
+                        row representing my ranking and the row colour. I still wanted my cards to have text. So, I used Bootrsp 5's img-card-overlay property so that my description for each film appears on hover. To make the text in img-card-overlay readable, I added a translucent background.
+                    </h5>
+                </div>
             </div>
 
-            <div class="container">
-                <h1>Process</h1>
+            <div class="container px-3 mt-2" id="resume-spy">
+                <h2>Resume</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        By far my Resume page is the most interesting and it is a page with tabular content. I used a table so that my resume looks like what it is when downloaded. I used Bootstrap 5 and JS with the help of StackOverflow to add a button that changes the fields of this page to different 
+                        colours based on the dark/light mode selected. Not all the fields of Bootstrap 5 classes had a dark theme established, so I added them in custom.css. I also added a button at the end of my resume table that downloads my resume to a PDF file.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="container px-3 mt-2" id="contact-spy">
+                <h2>Contact</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        My contact page is the form page. I added a connotative image along with the form through which the user can contact me, the developer. Other than using the basic form classes provided by Bootstrap, I also used classes that make the labels appear without the fields, form-floating, 
+                        and classes that ensure that each field is valid before submission. I used the js code provided by GetBootrsap's Validation to ensure that a user can send only when all the fields are valid. I also added to the js code so that an alert appears when the user clicks send only when 
+                        all the fields are valid. I also added a map indicating my location. 
+                    </h5>
+                </div>
+            </div>
+
+            <div class="container px-3 mt-2" id="process-spy">
+                <h2>Process</h2>
+                <div class="row text-wrap text-white px-3 mb-3">  
+                    <h5 class="mt-2">
+                        My process page is very text-heavy but the design follows the theme of the rest of the pages. But I added a Bootstrap 5 scrolly spy feature with a secondary navbar for the description of each page. 
+                    </h5>
+                </div>
             </div>
         </div>
 
         <!-- Citation -->
         <div class="px-5 py-3 my-2">
+            <h2>Citation</h2>
             <a href="https://www.w3schools.com/bootstrap5/" target="_blank"><button class="btn btn-primary mt-2">W3 Schools</button></a>
-            <a href="https://getbootstrap.com/docs/5.3/components/card/" target="_blank"><button class="btn btn-primary mt-2">Get Bootstrap</button></a>
+            <a href="https://getbootstrap.com/docs/5.0/forms/validation/?" target="_blank"><button class="btn btn-primary mt-2">Get Bootstrap</button></a>
             <a href="https://stackoverflow.com/questions/63082529/how-to-properly-introduce-a-light-dark-mode-in-bootstrap" target="_blank"><button class="btn btn-primary mt-2">Stackoverflow</button></a>
-            <a href="#"><button class="btn btn-primary mt-2">Adobe Illustrator, Premiere Pro, Photoshop, Fonts</button></a>
             <a href="#"><button class="btn btn-primary mt-2">Google Fonts</button></a>
-            <a href="#"><button class="btn btn-primary mt-2">Youtube</button></a>
+            <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE " target="_blank"><button class="btn btn-primary mt-2">Youtube</button></a>
+            <a href="#"><button class="btn btn-primary mt-2">Google Images</button></a>
+            <a href="#"><button class="btn btn-primary mt-2">Adobe Illustrator, Premiere Pro, Photoshop, Fonts</button></a>
+            <a href="https://webaim.org/resources/contrastchecker/" target="_blank"><button class="btn btn-primary mt-2">Web AIM</button></a>
         </div>  
 
     </div>
-
     
     <!-- Footer -->
     <footer class="mt-5 mb-2">

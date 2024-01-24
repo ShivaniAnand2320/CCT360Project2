@@ -235,6 +235,11 @@ table h6{
     font-size: 1.5rem;
 }
 
+/* Process */
+.process-nav{
+    background-color: var(--bs-black);
+}
+
 /* Footer */
 
 footer h4{
